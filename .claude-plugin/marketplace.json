@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "dontbesilent 商业诊断工具箱 — 从 12,307 条推文中提炼方法论，做成 10 个 Claude Code skill",
-    "version": "2.3.0"
+    "version": "2.4.0"
   },
   "plugins": [
     {
@@ -97,6 +97,16 @@
       "category": "thinking-tools",
       "keywords": ["austrian-economics", "hayek", "mises", "debate", "philosophy", "chinese"],
       "skills": ["./skills/chatroom-austrian"]
+    },
+    {
+      "name": "dbs-ai-check",
+      "description": "dontbesilent AI 写作特征识别。扫描文案中的 AI 生成痕迹，输出检测报告。默认只诊断不改。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-creation",
+      "keywords": ["ai-detection", "writing", "fingerprint", "content-quality", "chinese"],
+      "skills": ["./skills/dbs-ai-check"]
     },
     {
       "name": "dbskill-upgrade",
