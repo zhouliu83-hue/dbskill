@@ -57,6 +57,9 @@ cleanup_plugins() {
 }
 
 MARKETPLACE_REPO=$(detect_marketplace_repo)
+# Sanitize: keep only characters valid in a GitHub owner/repo slug to prevent
+# a maliciously crafted remote URL from corrupting the sed substitution.
+MARKETPLACE_REPO=$(printf '%s' "$MARKETPLACE_REPO" | tr -dc 'A-Za-z0-9/_.-')
 echo "Using marketplace repo: $MARKETPLACE_REPO"
 
 # Render tape template: replace MARKETPLACE_REPO placeholder with detected repo
@@ -77,5 +80,5 @@ echo "Cleaning up..."
 cleanup_plugins
 rm -f /tmp/demo_raw.gif "$TAPE_RENDERED" /tmp/cw.sh
 
-SIZE=$(ls -lh "$OUTPUT_GIF" | awk '{print $5}')
+SIZE=$(du -sh "$OUTPUT_GIF" | awk '{print $1}')
 echo "Done: $OUTPUT_GIF ($SIZE)"
