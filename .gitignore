@@ -3,11 +3,13 @@ chatbot/
 plans/
 skills 版本管理/
 社媒推广/
+学习课题/
 .DS_Store
 .obsidian/
 AGENTS.md
 CLAUDE.md
 SOURCE_OF_TRUTH.md
+dist/
 
 # 知识库：只发 Skill 需要的部分
 知识库/legacy/
