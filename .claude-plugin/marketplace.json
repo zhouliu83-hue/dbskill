@@ -4,8 +4,8 @@
     "name": "dontbesilent2025"
   },
   "metadata": {
-    "description": "dontbesilent 商业诊断工具箱 — 从 12,307 条推文中提炼方法论，做成 19 个 Claude Code skill",
-    "version": "2.9.1"
+    "description": "dontbesilent 商业诊断工具箱 — 从 12,307 条推文中提炼方法论，做成 20 个 Claude Code skill",
+    "version": "2.12.0"
   },
   "plugins": [
     {
@@ -187,6 +187,16 @@
       "category": "thinking-tools",
       "keywords": ["problem", "question", "agent", "automation", "explanation", "hard-to-vary", "chinese"],
       "skills": ["./skills/dbs-good-question"]
+    },
+    {
+      "name": "dbs-decision",
+      "description": "dontbesilent 个人决策系统。把任何一个需要长期跟踪的领域（业务、关系、健康、职业、学习、投资……）做成本地知识工程：四层结构（事实/规律/定格/待解）+ 来源标签 + 写完不改的快照 + 能炼出规律的概念库。支持立案、回填、状态画像、隐私模式。",
+      "source": "./",
+      "strict": false,
+      "version": "2.0.0",
+      "category": "state-management",
+      "keywords": ["decision", "tracking", "knowledge-project", "personal", "snapshot", "concept-library", "chinese"],
+      "skills": ["./skills/dbs-decision"]
     },
     {
       "name": "dbs-learning",
