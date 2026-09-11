@@ -147,7 +147,7 @@ dbskill 每次只处理一个当前任务。单个 Skill 能覆盖时保持简�
 
 ![dbskill 知识来源图](docs/knowledge-pipeline.svg)
 
-## 共同贡献者
+## 共同贡献者来源
 
 `dbs-content-risk-check` 的敏感词检查能力由以下共创者共同完善，他们的贡献不可替代：
 
